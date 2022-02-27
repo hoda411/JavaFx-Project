@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="1009.0" style="-fx-border-radius: 10; -fx-background-color: #EAEAEA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.StudentController">
+   <children>
+      <Button layoutX="859.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="19.0" prefWidth="136.0" style="-fx-background-color: #519259; -fx-border-radius: 20px;" text="Back To Home" textFill="WHITE" AnchorPane.bottomAnchor="23.2" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TableView" layoutX="354.0" layoutY="107.0" onMouseReleased="#show" prefHeight="329.0" prefWidth="642.0" AnchorPane.bottomAnchor="93.39999999999998" AnchorPane.leftAnchor="354.0" AnchorPane.rightAnchor="12.600000000000023" AnchorPane.topAnchor="107.0">
+        <columns>
+          <TableColumn fx:id="StudentID" prefWidth="51.199951171875" text="ID" />
+          <TableColumn fx:id="StudentName" prefWidth="120.00003051757812" text="Name" />
+            <TableColumn fx:id="StudentEmail" prefWidth="115.20001220703125" text="E-mail" />
+            <TableColumn fx:id="StudentPhone" prefWidth="104.0" text="Phone" />
+            <TableColumn fx:id="StudentAddress" prefWidth="92.7999267578125" text="Address" />
+            <TableColumn fx:id="Studentlevel" minWidth="0.0" prefWidth="68.800048828125" text="Level" />
+            <TableColumn fx:id="StudentDepartment" prefWidth="90.4000244140625" text="Department" />
+        </columns>
+      </TableView>
+      <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="58.0" prefHeight="263.0" prefWidth="100.0">
+         <children>
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" textAlignment="CENTER" wrappingWidth="30.212949752807617">
+               <font>
+                  <Font name="Tahoma" size="17.0" />
+               </font>
+            </Text>
+            <HBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="100.0" />
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="39.0" prefWidth="100.0" />
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="38.0" prefWidth="100.0" />
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="45.0" prefWidth="100.0" />
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="353.0" prefHeight="70.0" prefWidth="100.0" AnchorPane.bottomAnchor="97.6" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Level">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="33.0" prefWidth="100.0" />
+            <Text fill="#0f0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="122.0" layoutY="61.0" prefHeight="263.0" prefWidth="150.0">
+         <children>
+            <TextField fx:id="id" promptText="Enter Your ID" />
+            <HBox prefHeight="33.0" prefWidth="100.0" />
+            <TextField fx:id="FullName" prefHeight="26.0" prefWidth="150.0" promptText="Enter Your Name" />
+            <HBox prefHeight="33.0" prefWidth="100.0" />
+            <TextField fx:id="Email" promptText="Enter Your E-mail" />
+            <HBox prefHeight="34.0" prefWidth="150.0" />
+            <TextField fx:id="FullAddress" promptText="Enter Your Address" />
+            <HBox prefHeight="40.0" prefWidth="150.0" />
+            <TextField fx:id="Phone" prefHeight="11.0" prefWidth="150.0" promptText="Enter Your Phone" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="123.0" layoutY="353.0" prefHeight="70.0" prefWidth="150.0" AnchorPane.bottomAnchor="97.6" AnchorPane.leftAnchor="123.0">
+         <children>
+            <TextField fx:id="numLevel" promptText="Enter Your Level" />
+            <HBox prefHeight="33.0" prefWidth="100.0" />
+            <TextField fx:id="DepartChe" promptText="Enter Your department" />
+         </children>
+      </VBox>
+      <Button layoutX="362.0" layoutY="470.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #519259; -fx-border-radius: 20px;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="20.6" AnchorPane.leftAnchor="362.0">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="484.0" layoutY="62.0" mnemonicParsing="false" onAction="#delete" prefHeight="22.0" prefWidth="100.0" style="-fx-background-color: #DD4A48; -fx-border-radius: 20px;" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="484.0" AnchorPane.topAnchor="62.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="889.0" layoutY="59.0" mnemonicParsing="false" onAction="#setSearchButtonClick" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: #DD4A48;" text="Search" textFill="WHITE" AnchorPane.rightAnchor="13.599999999999994">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="adminTFSearch" layoutX="617.0" layoutY="61.0" prefHeight="30.0" prefWidth="242.0" promptText="Search or Delete With id" AnchorPane.leftAnchor="616.6" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button layoutX="354.0" layoutY="61.0" mnemonicParsing="false" onAction="#setRefreshAutoClick" prefHeight="29.0" prefWidth="92.0" style="-fx-background-color: #519259; -fx-border-radius: 20px;" text="Show " textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="218.0" layoutY="472.0" mnemonicParsing="false" onAction="#clear" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #DD4A48; -fx-border-radius: 20px;" text="Clear" textFill="WHITE" AnchorPane.bottomAnchor="20.6" AnchorPane.leftAnchor="217.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="471.0" mnemonicParsing="false" onAction="#updata" prefHeight="29.0" prefWidth="86.0" style="-fx-background-color: #519259; -fx-border-radius: 20px;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="20.6" AnchorPane.leftAnchor="12.599999999999994">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="339.0" layoutY="44.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="10.0" AnchorPane.bottomAnchor="66.60000000000002" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="44.0" />
+      <Separator layoutX="18.0" layoutY="336.0" prefHeight="10.0" prefWidth="325.0" AnchorPane.bottomAnchor="174.6" />
+      <Separator layoutX="25.0" layoutY="448.0" prefHeight="10.0" prefWidth="958.0" AnchorPane.bottomAnchor="62.6" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.600000000000023" />
+      <MenuBar layoutY="7.0" prefHeight="26.0" prefWidth="1009.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

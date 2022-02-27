@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.GpaController">
+   <children>
+      <RadioButton layoutX="20.0" layoutY="83.0" mnemonicParsing="false" text="Name" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="103.0" layoutY="83.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="43.0" text="ID" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="158.0" layoutY="83.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="143.0" text="Academic Number" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="313.0" layoutY="75.0" prefHeight="36.0" prefWidth="166.0" />
+      <Button layoutX="496.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #357EC7;" text="Search" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="170.0" text="Student's GPA :" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="143.0" layoutY="161.0" prefHeight="36.0" prefWidth="149.0" />
+      <Label layoutX="373.0" layoutY="171.0" prefHeight="19.0" prefWidth="46.0" text="Status:" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="435.0" layoutY="162.0" prefHeight="36.0" prefWidth="149.0" />
+      <TableView fx:id="gpa_t" layoutX="74.0" layoutY="247.0" prefHeight="200.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="185.0" text="Subject Name" />
+          <TableColumn fx:id="c2" minWidth="0.0" prefWidth="90.0" text="Status" />
+            <TableColumn fx:id="c3" prefWidth="90.0" text="Grade" />
+            <TableColumn fx:id="c4" prefWidth="130.0" text="GPA" />
+        </columns>
+      </TableView>
+      <Label layoutX="271.0" layoutY="217.0" prefHeight="19.0" prefWidth="149.0" text="Show Student's Data :" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="88.0" layoutX="299.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../gpa_calculator_64px.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="524.0" layoutY="457.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #357ec7;" text="Print Data" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #357ec7;" text="Back To Home" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

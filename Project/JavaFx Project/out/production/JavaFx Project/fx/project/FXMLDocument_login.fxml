@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="489.0" style="-fx-background-color: #EAEAEA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.loginController">
+   <children>
+      <TextField fx:id="t1" layoutX="261.0" layoutY="110.0" prefHeight="31.0" prefWidth="169.0" promptText="user name or email" style="-fx-background-color: tranparent; -fx-border-color: #519259; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="261.0" layoutY="241.0" mnemonicParsing="false" onAction="#Login" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #519259; -fx-border-radius: 10px;" text="LogIn" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="t2" layoutX="261.0" layoutY="175.0" prefHeight="31.0" prefWidth="169.0" promptText="password" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: #519259; -fx-background-color: tranparent;" />
+      <Label layoutX="254.0" layoutY="289.0" text="Don't Have An Account?" />
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="223.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../user_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="223.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../password_40px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="302.0" layoutY="54.0" prefHeight="37.0" prefWidth="88.0" text="Login" textFill="#519259">
+         <font>
+            <Font name="Times New Roman" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="385.0" layoutY="285.0" mnemonicParsing="false" onAction="#reg" style="-fx-background-color: tranparent;" text="Register" textFill="#519259">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="337.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: tranparent;" text="Forgot Password" textFill="#dd4a48" />
+      <Pane prefHeight="363.0" prefWidth="200.0" style="-fx-background-color: #519259;" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</Pane>

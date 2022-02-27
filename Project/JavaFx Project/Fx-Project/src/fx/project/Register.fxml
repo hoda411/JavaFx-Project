@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.RegisterController">
+   <children>
+      <TextField fx:id="ur" layoutX="294.0" layoutY="98.0" prefHeight="34.0" prefWidth="176.0" promptText="User Name / Email" style="-fx-background-color: tranparent; -fx-border-color: #519259; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="pr" layoutX="294.0" layoutY="161.0" prefHeight="34.0" prefWidth="176.0" promptText="Password" style="-fx-background-color: tranparent; -fx-border-color: #519259; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="294.0" layoutY="299.0" mnemonicParsing="false" onAction="#insert" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: #519259;" text="Register" textFill="#f5f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="p" layoutX="294.0" layoutY="224.0" prefHeight="34.0" prefWidth="176.0" promptText="phone" style="-fx-background-color: tranparent; -fx-border-color: #519259; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="253.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../user_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="253.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../password_40px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="253.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../phone_40px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="327.0" layoutY="35.0" prefHeight="38.0" prefWidth="126.0" text="Register" textFill="#519259">
+         <font>
+            <Font name="Times New Roman" size="33.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="370.0" prefWidth="210.0" style="-fx-background-color: #519259;" />
+   </children>
+</AnchorPane>

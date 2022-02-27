@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.SubController">
+   <children>
+      <TextField layoutX="122.0" layoutY="304.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="122.0" layoutY="342.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="122.0" layoutY="378.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="122.0" layoutY="446.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="122.0" layoutY="413.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="122.0" layoutY="479.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="363.0" layoutY="302.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="363.0" layoutY="340.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="363.0" layoutY="376.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="363.0" layoutY="444.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="363.0" layoutY="411.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="363.0" layoutY="479.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="574.0" layoutY="302.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="574.0" layoutY="340.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="574.0" layoutY="376.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="574.0" layoutY="444.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="574.0" layoutY="411.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="574.0" layoutY="479.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="47.0" layoutY="305.0" prefHeight="20.0" prefWidth="65.0" text="Subject 1" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="344.0" prefHeight="20.0" prefWidth="65.0" text="Subject 2" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="415.0" prefHeight="20.0" prefWidth="65.0" text="Subject 4" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="380.0" prefHeight="20.0" prefWidth="65.0" text="Subject 3" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="483.0" prefHeight="20.0" prefWidth="65.0" text="Subject 6" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="448.0" prefHeight="20.0" prefWidth="65.0" text="Subject 5" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="304.0" prefHeight="20.0" prefWidth="71.0" text="previous 1" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="342.0" prefHeight="20.0" prefWidth="71.0" text="previous 2" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="378.0" prefHeight="20.0" prefWidth="71.0" text="previous 3" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="483.0" prefHeight="20.0" prefWidth="71.0" text="previous 6" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="446.0" prefHeight="20.0" prefWidth="71.0" text="previous 5" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="415.0" prefHeight="20.0" prefWidth="71.0" text="previous 4" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="306.0" prefHeight="17.0" prefWidth="45.0" text="Grade" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="344.0" prefHeight="17.0" prefWidth="45.0" text="Grade" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="450.0" prefHeight="17.0" prefWidth="45.0" text="Grade" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="415.0" prefHeight="17.0" prefWidth="45.0" text="Grade" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="382.0" prefHeight="17.0" prefWidth="45.0" text="Grade" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="485.0" prefHeight="17.0" prefWidth="45.0" text="Grade" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="295.0" layoutY="118.0" prefHeight="25.0" prefWidth="162.0" />
+      <Button layoutX="496.0" layoutY="116.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #357ec7;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField layoutX="164.0" layoutY="173.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField layoutX="529.0" layoutY="171.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="121.0" layoutY="174.0" text="GPA" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="176.0" text="Number of subjects" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="87.0" layoutX="345.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../student_male_40px.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="57.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleButton2Action" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #357ec7;" text="Back to home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="582.0" layoutY="550.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #357ec7;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="55.0" layoutY="235.0" text="Enter Subject" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="158.0" layoutY="230.0" prefHeight="37.0" prefWidth="172.0" />
+      <Button layoutX="369.0" layoutY="227.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="138.0" style="-fx-background-color: #357ec7;" text="Show Previous" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField layoutX="527.0" layoutY="230.0" prefHeight="37.0" prefWidth="172.0" />
+      <Label layoutX="179.0" layoutY="124.0" text="Enter your id" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="345.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.HomeFXMLController">
+   <children>
+      <Button layoutX="118.0" layoutY="62.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #357ec7;" text="Home" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="354.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #357ec7;" text="Students" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="118.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #357ec7;" text="GPA" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="354.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #357ec7;" text="Subjects" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="118.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #357ec7;" text="Report" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="354.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleButtonAction5" prefHeight="46.0" prefWidth="100.0" style="-fx-background-color: #357ec7;" text="Logout" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="65.0" fitWidth="77.0" layoutX="41.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../home_64px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="275.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../student_male_40px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="41.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../gpa_calculator_64px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="275.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../study_40px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="41.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../graph_report_64px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="275.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Logout_40px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onContextMenuRequested="#setRefreshAutoClick" onMouseReleased="#setRefreshAutoClick" prefHeight="399.0" prefWidth="664.0" style="-fx-background-color: #EAEAEA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.project.ReportController">
+   <children>
+      <TableView fx:id="ReportTable" layoutX="48.0" layoutY="46.0" prefHeight="271.0" prefWidth="584.0">
+        <columns>
+          <TableColumn fx:id="Reportid" minWidth="0.0" prefWidth="56.79998779296875" text="ID" />
+          <TableColumn fx:id="ReportstuName" prefWidth="180.0" text="Student Name" />
+            <TableColumn fx:id="ReportDepartment" prefWidth="75.20001220703125" text="Depart" />
+            <TableColumn fx:id="ReportLevel" prefWidth="67.20001220703125" text="Level " />
+            <TableColumn fx:id="ReportSub" prefWidth="106.4000244140625" text="Subject Name" />
+            <TableColumn fx:id="ReportGrades" prefWidth="104.7999267578125" text="Most Grade" />
+        </columns>
+      </TableView>
+      <Button layoutX="84.0" layoutY="343.0" mnemonicParsing="false" onAction="#testmaxG" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #519259;" text="Print Data" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="464.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="36.0" prefWidth="116.0" style="-fx-background-color: #DD4A48;" text="Back To Home" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>
